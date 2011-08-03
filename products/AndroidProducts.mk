@@ -1,5 +1,6 @@
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/cyanogen_ace.mk \
+    $(LOCAL_DIR)/cyanogen_anzu.mk \
     $(LOCAL_DIR)/cyanogen_blade.mk \
     $(LOCAL_DIR)/cyanogen_bravo.mk \
     $(LOCAL_DIR)/cyanogen_bravoc.mk \
@@ -14,6 +15,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/cyanogen_encore.mk \
     $(LOCAL_DIR)/cyanogen_espresso.mk \
     $(LOCAL_DIR)/cyanogen_fascinatemtd.mk \
+    $(LOCAL_DIR)/cyanogen_hallon.mk \
     $(LOCAL_DIR)/cyanogen_hero.mk \
     $(LOCAL_DIR)/cyanogen_heroc.mk \
     $(LOCAL_DIR)/cyanogen_inc.mk \
@@ -48,4 +50,5 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/cyanogen_vivow.mk \
     $(LOCAL_DIR)/cyanogen_z71.mk \
     $(LOCAL_DIR)/cyanogen_zeppelin.mk \
-    $(LOCAL_DIR)/cyanogen_zero.mk
+    $(LOCAL_DIR)/cyanogen_zero.mk \
+    $(LOCAL_DIR)/cyanogen_zeus.mk
