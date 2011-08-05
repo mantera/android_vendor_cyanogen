@@ -29,6 +29,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/cyanogen_leo.mk \
     $(LOCAL_DIR)/cyanogen_liberty.mk \
     $(LOCAL_DIR)/cyanogen_mecha.mk \
+    $(LOCAL_DIR)/cyanogen_mesmerizemtd.mk \
     $(LOCAL_DIR)/cyanogen_morrison.mk \
     $(LOCAL_DIR)/cyanogen_one.mk \
     $(LOCAL_DIR)/cyanogen_p990.mk \
@@ -36,6 +37,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/cyanogen_passion.mk \
     $(LOCAL_DIR)/cyanogen_shadow.mk \
     $(LOCAL_DIR)/cyanogen_sholes.mk \
+    $(LOCAL_DIR)/cyanogen_showcasemtd.mk \
     $(LOCAL_DIR)/cyanogen_smb_a1002.mk \
     $(LOCAL_DIR)/cyanogen_smb_a1004.mk \
     $(LOCAL_DIR)/cyanogen_smb_a1011.mk \
