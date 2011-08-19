@@ -4,6 +4,9 @@ $(call inherit-product, device/motorola/triumph/triumph.mk)
 # Inherit some common cyanogenmod stuff.
 $(call inherit-product, vendor/cyanogen/products/common_full.mk)
 
+# Include GSM stuff
+$(call inherit-product, vendor/cyanogen/products/gsm.mk)
+
 #
 # Setup device specific product configuration.
 #
@@ -16,9 +19,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=triumph BUILD_ID=GRJ22 BUILD_DISPLA
 
 # Extra Triumph overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/triumph
-
-# Broadcom FM radio
-$(call inherit-product, vendor/cyanogen/products/bcm_fm_radio.mk)
 
 #
 # Set ro.modversion
