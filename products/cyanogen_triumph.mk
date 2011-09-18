@@ -4,9 +4,6 @@ $(call inherit-product, device/motorola/triumph/triumph.mk)
 # Inherit some common cyanogenmod stuff.
 $(call inherit-product, vendor/cyanogen/products/common_full.mk)
 
-# Include GSM stuff
-$(call inherit-product, vendor/cyanogen/products/gsm.mk)
-
 #
 # Setup device specific product configuration.
 #
