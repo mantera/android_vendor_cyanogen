@@ -2,7 +2,7 @@
 $(call inherit-product, device/htc/buzz/buzz.mk)
 
 # Inherit some common cyanogenmod stuff.
-$(call inherit-product, vendor/cyanogen/products/common_full.mk)
+$(call inherit-product, vendor/cyanogen/products/common_full_no_themes.mk)
 
 # Include GSM stuff
 $(call inherit-product, vendor/cyanogen/products/gsm.mk)
@@ -16,6 +16,8 @@ PRODUCT_DEVICE := buzz
 PRODUCT_MODEL := HTC Wildfire
 PRODUCT_MANUFACTURER := HTC
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=htc_buzz BUILD_ID=GRI40 BUILD_FINGERPRINT=google/passion/passion:2.3.3/GRI40/102588:user/release-keys PRIVATE_BUILD_DESC="passion-user 2.3.3 GRI40 102588 release-keys"
+
+PRODUCT_SPECIFIC_DEFINES += TARGET_PRELINKER_MAP=$(TOP)/vendor/cyanogen/prelink-linux-arm-msm722x.map
 
 # Add LDPI assets, in addition to MDPI
 PRODUCT_LOCALES += ldpi mdpi
