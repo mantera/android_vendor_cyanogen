@@ -17,21 +17,13 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=triumph BUILD_ID=GRJ22 BUILD_DISPLA
 # Extra Triumph overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/triumph
 
-#
-# Set ro.modversion
-#
-ifdef CYANOGEN_NIGHTLY
-    PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=CyanogenMod-7-$(shell date +%m%d%Y)-NIGHTLY-Triumph
-else
-    ifdef CYANOGEN_RELEASE
-        PRODUCT_PROPERTY_OVERRIDES += \
-            ro.modversion=CyanogenMod-7.1.0-Triumph
-    else
-        PRODUCT_PROPERTY_OVERRIDES += \
-            ro.modversion=CyanogenMod-7.1.0-Triumph-KANG
-    endif
-endif
+# Add the Torch app
+PRODUCT_PACKAGES += Torch
+
+# Release name and versioning
+PRODUCT_RELEASE_NAME := Triumph
+PRODUCT_VERSION_DEVICE_SPECIFIC :=
+-include vendor/cyanogen/products/common_versions.mk
 
 #
 # Copy passion specific prebuilt files
